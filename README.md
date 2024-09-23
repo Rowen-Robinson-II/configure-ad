@@ -17,7 +17,7 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 10 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
