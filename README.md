@@ -27,6 +27,8 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 - Step 4: Join Client-1 to domain
 - Step 5: Setup Remote Desktop for non-admin users on Client-1
 - Step 6: Create users
+- Step 7: Configure Group Policy
+- Step 8: Enable/Disable accounts
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -105,3 +107,26 @@ login to DC-1 as jane_admin, open PowerShell_ise as an admin. Create a new file 
 <br>
 <br>
 <br />
+
+<h3 align="center">Step 7: Configure Group Policy to Lockout the account after 5 attempts</h3>
+<p>
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/51a97893-2f84-4c64-a708-45cb4b9044db">
+</p>
+<p>
+log into DC-1 go to Group Policy Management. Right-Click "Account Lockout Policy". Via Group Policy Management Editor go to Computer configuration -> Policies -> Windows Setting -> Security Settings -> Account Policies -> Account Lockout policy. Configure the lockout settings, then link the policy the the specified domain. Force update the policy using Command Prompt by typing "gpupdate /force"
+</p>
+<br>
+<br>
+<br />
+
+<h3 align="center">Step 8: Enabling and Disabling Accounts</h3>
+<p>
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/84d53f5e-0488-45c0-b001-264dd8a5dee4">
+</p>
+<p>
+To disable/enable an account go to Active Directory Users and Computers find a user in the _EMPLOYEE folder right-click their name then disable/enable as needed
+</p>
+<br>
+<br>
+<br />
+
