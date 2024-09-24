@@ -19,17 +19,18 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 - Windows Server 2022
 - Windows 10 
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Deployment and Configuration Steps</h2>
 
-- Step 1: Create and connect two VMs: DC-1 and Client-1
+- Step 1: Create and Connect Virtual Machines: DC-1 and Client-1
 - Step 2: Install Active Directory on DC-1
 - Step 3: Create a Domain Admin user within the domain
 - Step 4: Join Client-1 to domain
 - Step 5: Setup Remote Desktop for non-admin users on Client-1
 - Step 6: Create users
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>High-Level Deployment and Configuration Steps</h2>
 
+<h3 align="center">Step 1: Create and Connect Virtual Machines: DC-1 and Client-1</h3>
 <p>
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/c0bf980b-fde7-4818-9681-cf91097b5101">
 </p>
@@ -40,6 +41,7 @@ Two Virtual machines were created one named "DC-1" the other "Client-1" both are
 <br>
 <br />
 
+<h3 align="center">Step 2: Install Active Directory on DC-1</h3>
 <p>
 <img width="854" alt="image" src="https://github.com/user-attachments/assets/0af44c0f-1b1a-485a-bb0c-faa0e76ea94a">
 </p>
@@ -60,6 +62,7 @@ In Active Directory Users and Computers (ADUC), create Oganizational Units: _ADM
 <br>
 <br />
 
+<h3 align="center">Step 3: Create a Domain Admin user within the domain</h3>
 <p>
 <img width="853" alt="image" src="https://github.com/user-attachments/assets/f621a3c1-c7fe-48ab-87c5-522b140de59f">
 </p>
@@ -70,6 +73,7 @@ Create a new employee named jane doe with the username "jane_admin", then add ja
 <br>
 <br />
 
+<h3 align="center">Step 4: Join Client-1 to Domain</h3>
 <p>
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/bab40844-d85f-4644-ac06-edbb5fd7c435">
 </p>
@@ -80,6 +84,7 @@ login to Client-1 then join mydomain via System Properties then logoff
 <br>
 <br />
 
+<h3 align="center">Step 5: Setup Remote Desktop for non-admin users on Client-1</h3>
 <p>
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/80a15d51-4bf8-4273-8ddf-9a3cb6762629">
 </p>
@@ -90,6 +95,7 @@ login to Client-1 as jane_admin got System Properties -> Remote Desktop. Then ad
 <br>
 <br />
 
+<h3 align="center">Step 6: Create users</h3>
 <p>
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/637ed5a5-4fba-4fe8-90a3-9f7315d920bd">
 </p>
